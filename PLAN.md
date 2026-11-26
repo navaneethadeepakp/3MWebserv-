@@ -94,7 +94,7 @@ Owns the main loop, all socket and pipe I/O, and all child processes.
 - Ensuring `fork()` is not used anywhere else in the project
 - Stress testing the completed server under concurrent load
 
-### Part 2 — HTTP protocol — **Person A**
+### Part 2 — HTTP protocol — **SUPRIYA**
 
 Owns the interpretation of request data and the construction of responses.
 Performs no I/O.
@@ -115,7 +115,7 @@ Performs no I/O.
 - Persistent connection semantics, including honouring `Connection: close`
 - Verifying our responses and headers against NGINX for equivalent requests
 
-### Part 3 — Configuration and resources — **Person B**
+### Part 3 — Configuration and resources — **URSLA**
 
 Owns the configuration file and all filesystem access.
 
@@ -165,15 +165,15 @@ webserv/
 │   └── cgi/                 CGI processes
 │       └── cgi.hpp
 │
-├── http/                    Part 2 · Person A — request parsing, response building
+├── http/                    Part 2 · SUPRIYA — request parsing, response building
 │   ├── Makefile
 │   └── http.hpp
 │
-├── config/                  Part 3 · Person B — configuration file and routes
+├── config/                  Part 3 · URSLA — configuration file and routes
 │   ├── Makefile
 │   └── config.hpp
 │
-├── resources/               Part 3 · Person B — files, uploads, deletions
+├── resources/               Part 3 · URSLA — files, uploads, deletions
 │   ├── Makefile
 │   └── resources.hpp
 │
